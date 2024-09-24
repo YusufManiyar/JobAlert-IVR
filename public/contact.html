@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+        </div>
+        <form id="contact-form">
+            <!-- Name Input -->
+            <div class="input-field">
+                <!-- <label for="name">Name</label> -->
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="input-field">
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+             <!-- Phone Number Input -->
+            <div class="input-field">
+                <input type="tel" id="phone-no" pattern="\d{10}" maxlength="10" placeholder="Enter your phone no." required>
+            </div>
+
+            <!-- Dropdown List for Subject -->
+            <div class="input-field">
+                <!-- <label for="programming-language">Programming language</label> -->
+                <select id="programming-language" required>
+                    <option value="" disabled selected>Select a programming language</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+
+            <!-- Message Input -->
+            <div class="input-field">
+                <!-- <label for="Tell me about yourself">Tell me about yourself</label> -->
+                <textarea id="Tell me about yourself" placeholder="Tell me about yourself" rows="4" required></textarea>
+            </div>
+
+            <!-- File Upload (PDF Only) -->
+            <div class="input-field">
+                <label for="file-Resume">Upload Resume (PDF Only)</label>
+                <input type="file" id="file-resume" name="file" accept="application/pdf" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
