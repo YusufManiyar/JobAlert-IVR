@@ -74,11 +74,12 @@ The project uses the following key dependencies:
 job-alert/
 │
 ├── app.js            # Main entry point of the application
-├── config/           # Configuration files (e.g., database)
+├── db.js             # database configuration
+├── middleware/       # middleware functions
 ├── controllers/      # API controllers for job and candidate management
 ├── models/           # Sequelize models (e.g., User, Job, Application)
 ├── routes/           # Express routes
-├── utils/            # Utility functions (e.g., Twilio integration)
+├── provider/         # provider functions (e.g., Twilio integration)
 └── .env              # Environment variables
 ```
 
